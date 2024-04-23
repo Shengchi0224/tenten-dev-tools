@@ -203,30 +203,30 @@ function addBreadcrumbItem() {
     // Create new input for the item name
     const nameLabel = document.createElement('label');
     nameLabel.textContent = `Item ${itemCount} Name:`;
-    nameLabel.classList.add('mr-2','font-semibold','text-lime-50','focus:text-lime-300');
+    nameLabel.classList.add('mr-2','font-semibold','focus:text-lime-300');
 
     const nameInput = document.createElement('input');
     nameInput.setAttribute('type', 'text');
     nameInput.setAttribute('id', `item${itemCount}Name`);
-    nameInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    nameInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
     nameInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
     
 
     // Create new input for the item URL
     const urlLabel = document.createElement('label');
     urlLabel.textContent = `Item ${itemCount} URL:`;
-    urlLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    urlLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const urlInput = document.createElement('input');
     urlInput.setAttribute('type', 'text');
     urlInput.setAttribute('id', `item${itemCount}URL`);
-    urlInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    urlInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
     urlInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
+    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -256,28 +256,28 @@ function addFAQItem() {
     // Create FAQ question input
     const questionLabel = document.createElement('label');
     questionLabel.textContent = `Question ${itemCount}:`;
-    questionLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    questionLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const questionInput = document.createElement('input');
     questionInput.setAttribute('type', 'text');
     questionInput.setAttribute('id', `faqQuestion${itemCount}`);
     questionInput.addEventListener('input', generateJSONLD);
-    questionInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    questionInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     // Create FAQ answer textarea
     const answerLabel = document.createElement('label');
     answerLabel.textContent = `Answer ${itemCount}:`;
-    answerLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    answerLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const answerInput = document.createElement('textarea');
     answerInput.setAttribute('id', `faqAnswer${itemCount}`);
     answerInput.addEventListener('input', generateJSONLD);
-    answerInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    answerInput.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
+    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -300,17 +300,17 @@ function addSupply() {
 
     const label = document.createElement('label');
     label.textContent = "Supply:";
-    label.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    label.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'supply'); // Notice the class for easier collection
-    input.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    input.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
+    removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
     removeButton.addEventListener('click', () => {
         container.removeChild(itemContainer1); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -330,17 +330,17 @@ function addTool() {
     
     const label = document.createElement('label'); // Corrected line
     label.textContent = "Tool:";
-    label.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    label.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'tool'); // Notice the class for easier collection, similar to supplies
-    input.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    input.classList.add('w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
     
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
+     removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','hover:border-lime-300');
      removeButton.addEventListener('click', () => {
          container.removeChild(itemContainer2); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -363,40 +363,40 @@ function addStep() {
     // Create input elements for the step
     const nameLabel = document.createElement('label');
     nameLabel.textContent = "Step Name";
-    nameLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    nameLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const stepNameInput = document.createElement('input');
     stepNameInput.type = 'text';
-    stepNameInput.classList.add('stepName','w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    stepNameInput.classList.add('stepName','w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     const desLabel = document.createElement('label');
     desLabel.textContent = "Description";
-    desLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    desLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
     
     const stepDescriptionTextarea = document.createElement('textarea');
-    stepDescriptionTextarea.classList.add('stepDescription','w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    stepDescriptionTextarea.classList.add('stepDescription','w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     
     const imageLabel = document.createElement('label');
     imageLabel.textContent = "Image URL";
-    imageLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    imageLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const stepImageUrlInput = document.createElement('input');
     stepImageUrlInput.type = 'url';
-    stepImageUrlInput.classList.add('stepImageUrl','w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    stepImageUrlInput.classList.add('stepImageUrl','w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
     const urlLabel = document.createElement('label');
     urlLabel.textContent = "Step URL";
-    urlLabel.classList.add('mr-2', 'font-semibold','text-lime-50','focus:text-lime-300');
+    urlLabel.classList.add('mr-2', 'font-semibold','focus:text-lime-300');
 
     const stepUrlInput = document.createElement('input');
     stepUrlInput.type = 'url';
-    stepUrlInput.classList.add('stepUrl','w-full', 'px-2', 'py-1', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
+    stepUrlInput.classList.add('stepUrl','w-full', 'px-2', 'py-1', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300','mt-0.5');
 
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','text-lime-50','bg-transparent','focus:outline-none','focus:border-lime-300');
+     removeButton.classList.add('px-2', 'py-1', 'mt-4', 'border', 'rounded-md','bg-transparent','focus:outline-none','focus:border-lime-300');
      removeButton.addEventListener('click', () => {
          container.removeChild(stepDiv); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -584,14 +584,14 @@ function selectSchemaType() {
         staticFields[selectedSchemaType].forEach(field => {
             const label = document.createElement('label');
             label.textContent = `${capitalizeFirstLetter(field.name)}:`;
-            label.classList.add('mr-2', 'font-semibold' ,'text-lime-50','mt-1');
+            label.classList.add('mr-2', 'font-semibold' ,'mt-1');
 
             let input;
              if (field.type === 'text') {
                input = document.createElement('input');
                input.setAttribute('type', 'text');
                input.setAttribute('id', field.name);
-               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'select') {
                input = document.createElement('select');
                input.setAttribute('id', field.name);
@@ -601,7 +601,7 @@ function selectSchemaType() {
                option.textContent = optionValue;
                input.appendChild(option);
                });
-               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'radio') {
                input = document.createElement('div');
                field.options.forEach(optionValue => {
@@ -614,38 +614,38 @@ function selectSchemaType() {
                radioLabel.appendChild(document.createTextNode(optionValue));
                input.appendChild(radioLabel);
                });
-               input.classList.add('w-full', 'px-2', 'py-2', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+               input.classList.add('w-full', 'px-2', 'py-2', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'textarea') {
                 input = document.createElement('textarea');
                 input.setAttribute('id', field.name);
-                input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+                input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
                 // Debugging line to ensure this part is executed
                 console.log('Creating textarea with ID:', field.name);
             } else if (field.type === 'number') {
                input = document.createElement('input');
                input.setAttribute('type', 'number');
                input.setAttribute('id', field.name);
-               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+               input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'url') {
               input = document.createElement('input');
               input.setAttribute('type', 'url');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'tel') {
               input = document.createElement('input');
               input.setAttribute('type', 'tel');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'date') {
               input = document.createElement('input');
               input.setAttribute('type', 'date');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+              input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'datetime-local') {
                 input = document.createElement('input');
                 input.setAttribute('type', 'datetime-local');
                 input.setAttribute('id', field.name);
-                input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+                input.classList.add('w-full', 'px-2', 'py-1', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','mt-1');
             }
 
             // Update JSON-LD on input change
