@@ -180,6 +180,26 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('addStepButton').addEventListener('click', addStep);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarOptions = document.querySelectorAll('.sg-side_nav-sub-link');
+
+    // Function to handle sidebar option click
+    function handleSidebarOptionClick(event) {
+        const selectedSchemaType = event.target.dataset.schemaType;
+        const schemaTypeDropdown = document.getElementById('schemaType');
+
+        // Set the dropdown value to the selected schema type
+        schemaTypeDropdown.value = selectedSchemaType;
+
+        // Trigger the selection change event manually
+        schemaTypeDropdown.dispatchEvent(new Event('change'));
+    }
+
+    // Attach click event listeners to all sidebar options
+    sidebarOptions.forEach(option => {
+        option.addEventListener('click', handleSidebarOptionClick);
+    });
+});
 
 function addItem() {
     const selectedSchemaType = document.getElementById('schemaType').value;
