@@ -181,25 +181,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const sidebarOptions = document.querySelectorAll('.sg-side_nav-sub-link');
-
-    // Function to handle sidebar option click
-    function handleSidebarOptionClick(event) {
-        const selectedSchemaType = event.target.dataset.schemaType;
-        const schemaTypeDropdown = document.getElementById('schemaType');
-
-        // Set the dropdown value to the selected schema type
-        schemaTypeDropdown.value = selectedSchemaType;
-
-        // Trigger the selection change event manually
-        schemaTypeDropdown.dispatchEvent(new Event('change'));
-    }
-
-    // Attach click event listeners to all sidebar options
-    sidebarOptions.forEach(option => {
-        option.addEventListener('click', handleSidebarOptionClick);
+    const sidebarButtons = document.querySelectorAll('#sg-subfolder button');
+    sidebarButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            const selectedType = event.target.textContent.toLowerCase(); // Extract schema type from button text
+            selectSchemaType(selectedType); // Call selectSchemaType function with the selected type
+        });
     });
 });
+
 
 function addItem() {
     const selectedSchemaType = document.getElementById('schemaType').value;
