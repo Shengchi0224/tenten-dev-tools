@@ -203,30 +203,30 @@ function addBreadcrumbItem() {
     // Create new input for the item name
     const nameLabel = document.createElement('label');
     nameLabel.textContent = `Item ${itemCount} Name:`;
-    nameLabel.classList.add('font-semibold','text-sm');
+    nameLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const nameInput = document.createElement('input');
     nameInput.setAttribute('type', 'text');
     nameInput.setAttribute('id', `item${itemCount}Name`);
-    nameInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    nameInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
     nameInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
     
 
     // Create new input for the item URL
     const urlLabel = document.createElement('label');
     urlLabel.textContent = `Item ${itemCount} URL:`;
-    urlLabel.classList.add('font-semibold','text-sm');
+    urlLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const urlInput = document.createElement('input');
     urlInput.setAttribute('type', 'text');
     urlInput.setAttribute('id', `item${itemCount}URL`);
-    urlInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    urlInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
     urlInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-1','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -256,28 +256,28 @@ function addFAQItem() {
     // Create FAQ question input
     const questionLabel = document.createElement('label');
     questionLabel.textContent = `Question ${itemCount}:`;
-    questionLabel.classList.add('font-semibold','text-sm');
+    questionLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const questionInput = document.createElement('input');
     questionInput.setAttribute('type', 'text');
     questionInput.setAttribute('id', `faqQuestion${itemCount}`);
     questionInput.addEventListener('input', generateJSONLD);
-    questionInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    questionInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     // Create FAQ answer textarea
     const answerLabel = document.createElement('label');
     answerLabel.textContent = `Answer ${itemCount}:`;
-    answerLabel.classList.add('font-semibold','text-sm');
+    answerLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const answerInput = document.createElement('textarea');
     answerInput.setAttribute('id', `faqAnswer${itemCount}`);
     answerInput.addEventListener('input', generateJSONLD);
-    answerInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    answerInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-1','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -300,17 +300,17 @@ function addSupply() {
 
     const label = document.createElement('label');
     label.textContent = "Supply:";
-    label.classList.add('font-semibold','text-sm');
+    label.classList.add('font-semibold','text-sm','mt-2');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'supply'); // Notice the class for easier collection
-    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-1','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
     removeButton.addEventListener('click', () => {
         container.removeChild(itemContainer1); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -330,17 +330,17 @@ function addTool() {
     
     const label = document.createElement('label'); // Corrected line
     label.textContent = "Tool:";
-    label.classList.add('font-semibold','text-sm');
+    label.classList.add('font-semibold','text-sm','mt-2');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'tool'); // Notice the class for easier collection, similar to supplies
-    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
     
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-1','focus:outline-none','focus:border-lime-300');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
      removeButton.addEventListener('click', () => {
          container.removeChild(itemContainer2); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -363,40 +363,40 @@ function addStep() {
     // Create input elements for the step
     const nameLabel = document.createElement('label');
     nameLabel.textContent = "Step Name";
-    nameLabel.classList.add('font-semibold','text-sm');
+    nameLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const stepNameInput = document.createElement('input');
     stepNameInput.type = 'text';
-    stepNameInput.classList.add('stepName','w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    stepNameInput.classList.add('stepName','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     const desLabel = document.createElement('label');
     desLabel.textContent = "Description";
-    desLabel.classList.add('font-semibold','text-sm');
+    desLabel.classList.add('font-semibold','text-sm','mt-2');
     
     const stepDescriptionTextarea = document.createElement('textarea');
-    stepDescriptionTextarea.classList.add('stepDescription','w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    stepDescriptionTextarea.classList.add('stepDescription','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     
     const imageLabel = document.createElement('label');
     imageLabel.textContent = "Image URL";
-    imageLabel.classList.add('font-semibold','text-sm');
+    imageLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const stepImageUrlInput = document.createElement('input');
     stepImageUrlInput.type = 'url';
-    stepImageUrlInput.classList.add('stepImageUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    stepImageUrlInput.classList.add('stepImageUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
     const urlLabel = document.createElement('label');
     urlLabel.textContent = "Step URL";
-    urlLabel.classList.add('font-semibold','text-sm');
+    urlLabel.classList.add('font-semibold','text-sm','mt-2');
 
     const stepUrlInput = document.createElement('input');
     stepUrlInput.type = 'url';
-    stepUrlInput.classList.add('stepUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
+    stepUrlInput.classList.add('stepUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
 
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-1','focus:outline-none','focus:border-lime-300');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
      removeButton.addEventListener('click', () => {
          container.removeChild(stepDiv); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -584,7 +584,7 @@ function selectSchemaType() {
         staticFields[selectedSchemaType].forEach(field => {
             const label = document.createElement('label');
             label.textContent = `${capitalizeFirstLetter(field.name)}:`;
-            label.classList.add('font-semibold','text-sm');
+            label.classList.add('font-semibold','text-sm','mt-2');
 
             let input;
              if (field.type === 'text') {
