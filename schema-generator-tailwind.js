@@ -226,7 +226,7 @@ function addBreadcrumbItem() {
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm';
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
