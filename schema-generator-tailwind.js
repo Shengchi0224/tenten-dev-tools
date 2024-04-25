@@ -203,7 +203,7 @@ function addBreadcrumbItem() {
     // Create new input for the item name
     const nameLabel = document.createElement('label');
     nameLabel.textContent = `Item ${itemCount} Name:`;
-    nameLabel.classList.add('font-semibold');
+    nameLabel.classList.add('font-semibold','text-sm');
 
     const nameInput = document.createElement('input');
     nameInput.setAttribute('type', 'text');
@@ -215,7 +215,7 @@ function addBreadcrumbItem() {
     // Create new input for the item URL
     const urlLabel = document.createElement('label');
     urlLabel.textContent = `Item ${itemCount} URL:`;
-    urlLabel.classList.add('font-semibold');
+    urlLabel.classList.add('font-semibold','text-sm');
 
     const urlInput = document.createElement('input');
     urlInput.setAttribute('type', 'text');
@@ -256,7 +256,7 @@ function addFAQItem() {
     // Create FAQ question input
     const questionLabel = document.createElement('label');
     questionLabel.textContent = `Question ${itemCount}:`;
-    questionLabel.classList.add('font-semibold');
+    questionLabel.classList.add('font-semibold','text-sm');
 
     const questionInput = document.createElement('input');
     questionInput.setAttribute('type', 'text');
@@ -267,7 +267,7 @@ function addFAQItem() {
     // Create FAQ answer textarea
     const answerLabel = document.createElement('label');
     answerLabel.textContent = `Answer ${itemCount}:`;
-    answerLabel.classList.add('font-semibold');
+    answerLabel.classList.add('font-semibold','text-sm');
 
     const answerInput = document.createElement('textarea');
     answerInput.setAttribute('id', `faqAnswer${itemCount}`);
@@ -300,7 +300,7 @@ function addSupply() {
 
     const label = document.createElement('label');
     label.textContent = "Supply:";
-    label.classList.add('font-semibold');
+    label.classList.add('font-semibold','text-sm');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
@@ -330,7 +330,7 @@ function addTool() {
     
     const label = document.createElement('label'); // Corrected line
     label.textContent = "Tool:";
-    label.classList.add('font-semibold');
+    label.classList.add('font-semibold','text-sm');
 
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
@@ -363,7 +363,7 @@ function addStep() {
     // Create input elements for the step
     const nameLabel = document.createElement('label');
     nameLabel.textContent = "Step Name";
-    nameLabel.classList.add('font-semibold');
+    nameLabel.classList.add('font-semibold','text-sm');
 
     const stepNameInput = document.createElement('input');
     stepNameInput.type = 'text';
@@ -371,7 +371,7 @@ function addStep() {
 
     const desLabel = document.createElement('label');
     desLabel.textContent = "Description";
-    desLabel.classList.add('font-semibold');
+    desLabel.classList.add('font-semibold','text-sm');
     
     const stepDescriptionTextarea = document.createElement('textarea');
     stepDescriptionTextarea.classList.add('stepDescription','w-full','input','focus:outline-none','focus:text-lime-300','mt-0.5');
@@ -379,7 +379,7 @@ function addStep() {
     
     const imageLabel = document.createElement('label');
     imageLabel.textContent = "Image URL";
-    imageLabel.classList.add('font-semibold');
+    imageLabel.classList.add('font-semibold','text-sm');
 
     const stepImageUrlInput = document.createElement('input');
     stepImageUrlInput.type = 'url';
@@ -387,7 +387,7 @@ function addStep() {
 
     const urlLabel = document.createElement('label');
     urlLabel.textContent = "Step URL";
-    urlLabel.classList.add('font-semibold');
+    urlLabel.classList.add('font-semibold','text-sm');
 
     const stepUrlInput = document.createElement('input');
     stepUrlInput.type = 'url';
@@ -584,7 +584,7 @@ function selectSchemaType() {
         staticFields[selectedSchemaType].forEach(field => {
             const label = document.createElement('label');
             label.textContent = `${capitalizeFirstLetter(field.name)}:`;
-            label.classList.add('font-semibold');
+            label.classList.add('font-semibold','text-sm');
 
             let input;
              if (field.type === 'text') {
