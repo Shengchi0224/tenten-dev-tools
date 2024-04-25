@@ -226,7 +226,7 @@ function addBreadcrumbItem() {
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm';
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -277,7 +277,7 @@ function addFAQItem() {
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -310,7 +310,7 @@ function addSupply() {
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm');
     removeButton.addEventListener('click', () => {
         container.removeChild(itemContainer1); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -340,7 +340,7 @@ function addTool() {
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm');
      removeButton.addEventListener('click', () => {
          container.removeChild(itemContainer2); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -396,7 +396,7 @@ function addStep() {
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','text-sm');
      removeButton.addEventListener('click', () => {
          container.removeChild(stepDiv); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
