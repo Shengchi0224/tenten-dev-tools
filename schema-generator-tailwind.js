@@ -208,7 +208,7 @@ function addBreadcrumbItem() {
     const nameInput = document.createElement('input');
     nameInput.setAttribute('type', 'text');
     nameInput.setAttribute('id', `item${itemCount}Name`);
-    nameInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    nameInput.classList.add('w-full','input','focus:outline-none','mt-1');
     nameInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
     
 
@@ -220,13 +220,13 @@ function addBreadcrumbItem() {
     const urlInput = document.createElement('input');
     urlInput.setAttribute('type', 'text');
     urlInput.setAttribute('id', `item${itemCount}URL`);
-    urlInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    urlInput.classList.add('w-full','input','focus:outline-none','mt-1');
     urlInput.addEventListener('input', generateJSONLD); // Update JSON-LD on input change
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -262,7 +262,7 @@ function addFAQItem() {
     questionInput.setAttribute('type', 'text');
     questionInput.setAttribute('id', `faqQuestion${itemCount}`);
     questionInput.addEventListener('input', generateJSONLD);
-    questionInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    questionInput.classList.add('w-full','input','focus:outline-none','mt-1');
 
     // Create FAQ answer textarea
     const answerLabel = document.createElement('label');
@@ -272,12 +272,12 @@ function addFAQItem() {
     const answerInput = document.createElement('textarea');
     answerInput.setAttribute('id', `faqAnswer${itemCount}`);
     answerInput.addEventListener('input', generateJSONLD);
-    answerInput.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    answerInput.classList.add('w-full','input','focus:outline-none','mt-1');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
     removeButton.addEventListener('click', () => {
         formSectionsContainer.removeChild(itemContainer); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -305,12 +305,12 @@ function addSupply() {
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'supply'); // Notice the class for easier collection
-    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    input.classList.add('w-full','input','focus:outline-none','mt-1');
 
     // Create remove button for the item
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
+    removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
     removeButton.addEventListener('click', () => {
         container.removeChild(itemContainer1); // Remove the item container when button is clicked
         generateJSONLD(); // Update JSON-LD after removal
@@ -335,12 +335,12 @@ function addTool() {
     const input = document.createElement('input');
     input.setAttribute('type', 'text');
     input.setAttribute('class', 'tool'); // Notice the class for easier collection, similar to supplies
-    input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    input.classList.add('w-full','input','focus:outline-none','mt-1');
     
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
      removeButton.addEventListener('click', () => {
          container.removeChild(itemContainer2); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -367,14 +367,14 @@ function addStep() {
 
     const stepNameInput = document.createElement('input');
     stepNameInput.type = 'text';
-    stepNameInput.classList.add('stepName','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    stepNameInput.classList.add('stepName','w-full','input','focus:outline-none','mt-1');
 
     const desLabel = document.createElement('label');
     desLabel.textContent = "Description";
     desLabel.classList.add('font-semibold','text-sm','mt-2');
     
     const stepDescriptionTextarea = document.createElement('textarea');
-    stepDescriptionTextarea.classList.add('stepDescription','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    stepDescriptionTextarea.classList.add('stepDescription','w-full','input','focus:outline-none','mt-1');
 
     
     const imageLabel = document.createElement('label');
@@ -383,7 +383,7 @@ function addStep() {
 
     const stepImageUrlInput = document.createElement('input');
     stepImageUrlInput.type = 'url';
-    stepImageUrlInput.classList.add('stepImageUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    stepImageUrlInput.classList.add('stepImageUrl','w-full','input','focus:outline-none','mt-1');
 
     const urlLabel = document.createElement('label');
     urlLabel.textContent = "Step URL";
@@ -391,12 +391,12 @@ function addStep() {
 
     const stepUrlInput = document.createElement('input');
     stepUrlInput.type = 'url';
-    stepUrlInput.classList.add('stepUrl','w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+    stepUrlInput.classList.add('stepUrl','w-full','input','focus:outline-none','mt-1');
 
      // Create remove button for the item
      const removeButton = document.createElement('button');
      removeButton.textContent = 'Remove';
-     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none','focus:border-lime-300');
+     removeButton.classList.add('button','cc-outline','px-2','py-1','mt-2','focus:outline-none');
      removeButton.addEventListener('click', () => {
          container.removeChild(stepDiv); // Remove the item container when button is clicked
          generateJSONLD(); // Update JSON-LD after removal
@@ -591,7 +591,7 @@ function selectSchemaType() {
                input = document.createElement('input');
                input.setAttribute('type', 'text');
                input.setAttribute('id', field.name);
-               input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+               input.classList.add('w-full','input','focus:outline-none','mt-1');
             } else if (field.type === 'select') {
                input = document.createElement('select');
                input.setAttribute('id', field.name);
@@ -601,7 +601,7 @@ function selectSchemaType() {
                option.textContent = optionValue;
                input.appendChild(option);
                });
-               input.classList.add('w-full', 'input', 'cc-select', 'px-2' ,'py-2', 'rounded','rounded-md','focus:outline-none','focus:border-lime-300','mt-1');
+               input.classList.add('w-full', 'input', 'cc-select', 'px-2' ,'py-2', 'rounded','rounded-md','focus:outline-none','mt-1');
             } else if (field.type === 'radio') {
                input = document.createElement('div');
                field.options.forEach(optionValue => {
@@ -614,38 +614,38 @@ function selectSchemaType() {
                radioLabel.appendChild(document.createTextNode(optionValue));
                input.appendChild(radioLabel);
                });
-               input.classList.add('w-full', 'px-2', 'py-2', 'border' ,'border-blue-100', 'rounded','focus:border-lime-300','focus:outline-none','bg-transparent','text-lime-50','mt-1');
+               input.classList.add('w-full', 'px-2', 'py-2', 'border' ,'border-blue-100', 'rounded','focus:outline-none','bg-transparent','mt-1');
             } else if (field.type === 'textarea') {
                 input = document.createElement('textarea');
                 input.setAttribute('id', field.name);
-                input.classList.add('w-full','input','cc-text-area','focus:outline-none','focus:text-lime-300','mt-1');
+                input.classList.add('w-full','input','cc-text-area','focus:outline-none','mt-1');
                 // Debugging line to ensure this part is executed
                 console.log('Creating textarea with ID:', field.name);
             } else if (field.type === 'number') {
                input = document.createElement('input');
                input.setAttribute('type', 'number');
                input.setAttribute('id', field.name);
-               input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+               input.classList.add('w-full','input','focus:outline-none','mt-1');
             } else if (field.type === 'url') {
               input = document.createElement('input');
               input.setAttribute('type', 'url');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+              input.classList.add('w-full','input','focus:outline-none','mt-1');
             } else if (field.type === 'tel') {
               input = document.createElement('input');
               input.setAttribute('type', 'tel');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+              input.classList.add('w-full','input','focus:outline-none','mt-1');
             } else if (field.type === 'date') {
               input = document.createElement('input');
               input.setAttribute('type', 'date');
               input.setAttribute('id', field.name);
-              input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+              input.classList.add('w-full','input','focus:outline-none','mt-1');
             } else if (field.type === 'datetime-local') {
                 input = document.createElement('input');
                 input.setAttribute('type', 'datetime-local');
                 input.setAttribute('id', field.name);
-                input.classList.add('w-full','input','focus:outline-none','focus:text-lime-300','mt-1');
+                input.classList.add('w-full','input','focus:outline-none','mt-1');
             }
 
             // Update JSON-LD on input change
