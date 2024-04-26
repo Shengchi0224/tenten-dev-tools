@@ -422,7 +422,10 @@ function addStep() {
 
 // Function to display JSON-LD content as text in the preview section
 function displayJSONLDAsText(jsonString) {
-    const jsonLDContent = `<script type="application/ld+json">${jsonString}</script>`;
+    const jsonLDContent = 
+`<script type="application/ld+json"> 
+${jsonString}
+</script>`;
 
     const previewDiv = document.getElementById('preview');
     previewDiv.textContent = jsonLDContent; // Dynamically set JSON-LD content
